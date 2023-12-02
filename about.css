@@ -7,7 +7,7 @@ body {
     min-height: 100vh;
     display: grid;
     background-color: black;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
     grid-template-rows: 2fr 3fr 1fr;
     grid-template-areas: "header header"
                          "about photo"
@@ -30,7 +30,7 @@ header {
     background-image: url("temp_logo.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-color: red;
+    background-color: white;
 }
 
 header > div {
@@ -48,7 +48,7 @@ article {
     background-repeat: no-repeat;
 }
 
-h2, h3 {
+h2 {
     color: red;
     font-family: "Audiowide", sans-serif;
     text-align: center;
@@ -100,7 +100,7 @@ body > header > nav.horizontalNavigation li {
  }
 
  a:hover {
-    color: black;
+    color: violet;
   }
 
   a:link {

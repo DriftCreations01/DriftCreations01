@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+/* Body Grid */
+
+body {
+    min-height: 100dvh;
+    min-height: 100vh;
+    display: grid;
+    background-color: black;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-rows: 2fr 3fr 1fr;
+    grid-template-areas: "header header"
+                         "about photo"
+                         "footer footer";
+    grid-column-gap: 10px;
+ }
+
+body > header {grid-area: header;}
+body > article {grid-area: photo;}
+body > section {grid-area: about;}
+body > footer {grid-area: footer;}
+
+/* Header Settings  */
+
+header {
+    border-style: groove;
+    border-color: red;
+    border-width: 35px;
+    border-radius: 50px;
+    background-image: url("temp_logo.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: white;
+}
+
+header > div {
+    text-align: center;
+    list-style-type: none;
+}
+
+/* Article Settings  */
+
+article {
+    border-style: none none none groove;
+    border-color: red;
+    color: white;
+    background-image: url(collage_black.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    color: red;
+    font-family: "Audiowide", sans-serif;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: whitesmoke;
+}
+
+/* Section Settings  */
+
+section {
+    border-style: none groove none none;
+    border-color: red;
+}
+
+/* Footer Settings  */
+
+footer {
+    text-align: center;
+    border-style: groove;
+    border-radius: 25px;
+    background-color: red;
+    border-width: 25px;
+    display: block;
+}
+
+h1 {
+    font-family: "Audiowide", sans-serif;
+}
+
+/* Horizontal Navigation */
+
+body > header > nav.horizontalNavigation li {
+    width: 33.33%;
+    display: block;
+    float: left;
+ }
+ 
+ nav.horizontalNavigation a {
+    display: block;
+    text-align: center;
+    background-color: white;
+    border-radius: 100px;
+    border-color: black;
+    color: red;
+    font-family: "Audiowide", sans-serif;
+ }
+
+ a:hover {
+    color: black;
+  }
+
+  a:link {
+    color: red;
+    text-decoration: none;
+  }
+
+  body > footer > nav.horizontalNavigation li {
+    width: 25%;
+    display: block;
+    float: left;
+ }
+
+ /* Form Settings */
+
+ input[type=text] {
+    border: 2px solid red;
+    border-radius: 4px;
+  }
+
+  input[type=email] {
+    border: 2px solid red;
+    border-radius: 4px;
+  }
+
+  form {
+    text-align: center;
+    border-radius: 5px;
+    color: red;
+  }
